@@ -1,0 +1,199 @@
+  /* Custom CSS for a Clean, Modern Academic Theme */
+        :root {
+            --primary-bg: #f8f9fa;      /* Soft Grey/White Background */
+            --text-main: #2c3e50;       /* Dark Slate for readability */
+            --text-muted: #636e72;      /* Softer grey for secondary text */
+            --brand-green: #006a4e;     /* Deep Official Green */
+            --brand-red: #f42a41;       /* Official Red Accent */
+            --card-bg: #ffffff;         /* Pure White Cards */
+            --card-shadow: rgba(0, 0, 0, 0.08); /* Soft, elegant shadow */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Merriweather', serif; /* Serif fonts for headings = Academic feel */
+            color: var(--brand-green);
+            font-weight: 700;
+        }
+
+
+        .Active{
+          color: yellow !important;
+        }
+        /* Navbar Styling - Solid Green Brand Header */
+        .navbar-custom {
+            background-color: var(--brand-green);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            color: white !important;
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9) ;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #ffdadc !important; /* Soft pink/white hover */
+        }
+        .navbar-toggler {
+            border-color: rgba(255,255,255,0.5);
+        }
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        /* Hero Section - Clean and Impactful */
+        #hero {
+            /* Using a gradient overlay on an image */
+            background: linear-gradient(rgba(0, 106, 78, 0.85), rgba(0, 106, 78, 0.7)),center center / cover;
+            color: white;
+            padding: 8rem 0 6rem;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+            /* margin-bottom: 3rem; */
+        }
+        #hero h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Buttons */
+        .btn-primary-custom {
+            background-color: var(--brand-red);
+            border: 2px solid var(--brand-red);
+            color: white;
+            padding: 10px 25px;
+            font-weight: 600;
+            border-radius: 50px; /* Pill shape */
+            transition: all 0.3s ease;
+        }
+        .btn-primary-custom:hover {
+            background-color: #d61c31;
+            border-color: #d61c31;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(244, 42, 65, 0.3);
+        }
+
+        .btn-outline-custom {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 25px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-custom:hover {
+            background-color: white;
+            color: var(--brand-green);
+        }
+
+        /* Card Styling - Clean Paper Look */
+        .card-custom {
+            background-color: var(--card-bg);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--brand-red); /* Accent stripe */
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            color: var(--brand-green);
+            font-size: 1.25rem;
+        }
+        .card-subtitle {
+            color: var(--brand-red);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .card-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Section Utilities */
+        .section-padding {
+            padding: 5rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /* Underline effect for titles */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--brand-red);
+            margin: 10px auto 0;
+        }
+
+        /* Form Styling */
+        .form-control, .form-select {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            padding: 0.8rem;
+            border-radius: 8px;
+        }
+        .form-control:focus {
+            border-color: var(--brand-green);
+            box-shadow: 0 0 0 0.2rem rgba(0, 106, 78, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-main);
+            color: white;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
+        footer p {
+            color: #bdc3c7;
+        }
+
+        /* Modal Customization */
+        .modal-header {
+            background-color: var(--brand-green);
+            color: white;
+        }
+        .modal-title {
+            color: white !important;
+        }
+        .btn-close {
+            filter: invert(1);
+        }
+
+        /* Image */
+ .photographs img:hover{
+    transform: scale();
+ }
